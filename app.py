@@ -61,5 +61,5 @@ def predict():
     return render_template("index.html", img_data=encoded_img_data.decode('utf-8'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port = 5000,debug=True)
 
