@@ -66,7 +66,8 @@ soupsieve==2.3.1
 stack-data==0.2.0
 terminado==0.13.3
 testpath==0.6.0
-torch==1.11.0 -f https://data.pyg.org/whl/torch-1.11.0+cpu.html
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.11.0+cpu 
 torch-lr-finder==0.2.1
 tornado==6.1
 tqdm==4.63.1
