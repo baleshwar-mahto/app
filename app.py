@@ -22,7 +22,7 @@ def home():
     return render_template("index.html")
 
 # routes
-@app.route("/predict", methods=["POST","GET"])
+@app.route("/predict", methods=["POST"])
 
 def predict():
     
@@ -41,7 +41,7 @@ def predict():
     # get periods data from user
     #data = request.get_json(force=True)
     
-    periods =  int(request.form.get('experience_ddn'))
+    periods =  int(request.form['experience_ddn'])
   
     # make predictions
     # periods = 192 corresponds to 2 day ahead forecast
@@ -61,5 +61,5 @@ def predict():
     return render_template("index.html", img_data=encoded_img_data.decode('utf-8'))
 
 if __name__ == '__main__':
-    app.run(port = 5000,debug=True)
+    app.run(debug=True)
 
