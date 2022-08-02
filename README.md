@@ -1,1 +1,1 @@
-# flask_app
+# A flask webapp deployed using Heroku cloud platform
